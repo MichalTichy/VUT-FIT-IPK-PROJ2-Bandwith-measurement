@@ -1,0 +1,18 @@
+Program se zkládá ze dvou cástí, jednoduchého reflektoru a klienta který generuje data a provádí vlastní merení.
+
+Reflektor
+./ipk-mtrip reflect -p port 
+port - císlo portu, na kterém bude reflektor spušten.
+
+Klient
+./ipk-mtrip meter -h vzdáleny_host -p vzdálený_port - s velikost_sondy -t doba_mereni
+
+vzdáleny_host - doménové jméno nebo IP adresa stanice, na které je reflektor spušten.
+vzdálený_port - císlo portu, na kterém je reflektor spušten.
+velikost_sondy - velikost dat použitých v "probe" paketu
+doba_mereni - celový cas merení 
+
+
+
+Omezení projektu
+Klient nevypisuje minimální a maximální bandwith ale pouze prumerný.
